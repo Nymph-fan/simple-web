@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<form action="${pageContext.request.contextPath}/servlet/CheckServlet" method="post">
+<form action="<%=contextPath%>/servlet/CheckServlet" method="post">
     验证码：<input type="text" name="validateCode"/>
     <img alt="验证码看不清，换一张" src="<%=contextPath%>/servlet/DrawImage" id="validateCodeImg" onclick="changeImg()">
     <a href="javascript:void(0)" onclick="changeImg()">看不清，换一张</a>
