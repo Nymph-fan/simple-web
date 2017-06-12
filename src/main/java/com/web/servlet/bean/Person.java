@@ -4,7 +4,7 @@ package com.web.servlet.bean;
  * @author anyun
  * @date 2017/6/12
  * @time 15:31
- * @description
+ * @description jsp beam demo
  */
 public class Person {
 
