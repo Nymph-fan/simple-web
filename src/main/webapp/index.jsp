@@ -5,22 +5,9 @@
 %>
 <html>
 <head>
-    <title>在Form表单中使用验证码</title>
-    <script type="text/javascript">
-        //刷新验证码
-        function changeImg(){
-            document.getElementById("validateCodeImg").src="<%=contextPath%>/servlet/DrawImage?"+Math.random();
-        }
-    </script>
+    <title>注册</title>
 </head>
 
 <body>
-<form action="<%=contextPath%>/servlet/CheckServlet" method="post">
-    验证码：<input type="text" name="validateCode"/>
-    <img alt="验证码看不清，换一张" src="<%=contextPath%>/servlet/DrawImage" id="validateCodeImg" onclick="changeImg()">
-    <a href="javascript:void(0)" onclick="changeImg()">看不清，换一张</a>
-    <br/>
-    <input type="submit" value="提交">
-</form>
 </body>
 </html>
