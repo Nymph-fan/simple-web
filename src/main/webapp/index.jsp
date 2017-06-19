@@ -1,14 +1,12 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<%
-    String contextPath = request.getContextPath();
-%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
+
+<!DOCTYPE HTML>
 <html>
 <head>
-    <title>自定义标签</title>
+    <title>HttpSessionListener监听器监听HttpSession对象的创建</title>
 </head>
 
 <body>
-
+一访问JSP页面，HttpSession就创建了，创建好的Session的Id是：${pageContext.session.id}
 </body>
 </html>
